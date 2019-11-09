@@ -1,0 +1,14 @@
+<filter>
+<zero>
+.95,0
+</zero>
+<zero>
+-.95,0
+</zero>
+<pole>
+.9,0
+</pole>
+<pole>
+-.9,0
+</pole>
+</filter>

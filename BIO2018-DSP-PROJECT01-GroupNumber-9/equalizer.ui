@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1205</width>
+    <height>986</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>equalizer</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>211</width>
+      <height>301</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="controlsLayout">
+     <item>
+      <widget class="QPushButton" name="browseBtn">
+       <property name="text">
+        <string>Browse </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>    2Pi = 44100Hz</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="hzRadio">
+       <property name="text">
+        <string>Hz</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="radianRadio">
+       <property name="text">
+        <string>Radian</string>
+       </property>
+       <property name="checked">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="addFreqTxtBox">
+       <property name="text">
+        <string>Add Frequency</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="AddFreqBtn">
+       <property name="text">
+        <string>Add </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="generateFreqBtn">
+       <property name="text">
+        <string>generate frequencies</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="saveBtn">
+       <property name="text">
+        <string>save generated</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="clearWorkspaceBtn">
+       <property name="text">
+        <string>clear Workspace</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>580</y>
+      <width>931</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QSlider" name="equalizerSlider1">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider2">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider3">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider4">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider5">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider6">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider7">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider8">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider9">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QSlider" name="equalizerSlider10">
+       <property name="maximum">
+        <number>60</number>
+       </property>
+       <property name="pageStep">
+        <number>60</number>
+       </property>
+       <property name="value">
+        <number>30</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[π/10]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0-1</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>1-2</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>2-3</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>3-4</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>4-5</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>5-6</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>6-7</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>7-8</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>8-9</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>1060</x>
+      <y>880</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>9-10</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>290</y>
+      <width>121</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>time domain</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>550</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>frequency domain</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>720</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0 dB</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>580</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>30 dB</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>840</y>
+      <width>66</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>-30dB</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>20</y>
+      <width>941</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="signalPlotLayout"/>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>310</y>
+      <width>941</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="fourierPlotLayout"/>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>350</y>
+      <width>211</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QPushButton" name="plotSignalBtn">
+       <property name="text">
+        <string>plot signal</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="fftBtn">
+       <property name="text">
+        <string>FFT</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>550</y>
+      <width>75</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>[π]</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1205</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNew">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen_filter"/>
+    <addaction name="actionSave_filter"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actionClear_workspace"/>
+   </widget>
+   <addaction name="menuNew"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionNew">
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionOpen_filter">
+   <property name="text">
+    <string>choose filter</string>
+   </property>
+  </action>
+  <action name="actionSave_filter">
+   <property name="text">
+    <string>save filter</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>exit</string>
+   </property>
+  </action>
+  <action name="actionClear_workspace">
+   <property name="text">
+    <string>clear workspace</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
